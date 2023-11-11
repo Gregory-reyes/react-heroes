@@ -2,6 +2,9 @@
 ```	
 yarn install
 ```
+```
+yarn build
+```
 #se ejecuta el comando yarn start  yarn dev para iniciar la aplicación
 ```
 yarn dev 
