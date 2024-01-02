@@ -14,7 +14,7 @@ RUN yarn build
 
 
 FROM nginx:1.23.3 as prod
-EXPOSE 81
+EXPOSE 83
 
 COPY --from=builder /app/dist /usr/share/nginx/html
 COPY assets/ /usr/share/nginx/html/assets
