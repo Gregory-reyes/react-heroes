@@ -12,7 +12,7 @@ yarn start
 ```
 ## descargamos la imagen de nginx version 1.23.3 con el siguiente comando
 ```
-docker run --name some-nginx -d -p 8080:80 nginx:1.23.3
+docker run --name nombre -d -p 8080:80 nginx:1.23.3
 ```
 ## entrar al contenedor de manera interactiva
 ```
@@ -34,7 +34,7 @@ docker build -t heroes-app . --no-cache
 ```
 ## comando para correr la imagen
 ```
-docker run -d -p 80:80 heroes-app
+docker run --name nombre -d -p 80:80 heroes-app
 ```
 
 
