@@ -10,7 +10,8 @@ yarn build
 yarn dev 
 yarn start
 ```
-## descargamos la imagen de nginx version 1.23.3 con el siguiente comando
+## descargamos la imagen de nginx version 1.23.3 para copiar información de nginx para nuestra carpeta de build despues se puede eliminar la imagen nginx:1.23.3
+
 ```
 docker run --name nombre -d -p 8080:80 nginx:1.23.3
 ```
@@ -23,7 +24,8 @@ docker exec -it 0fa bash
 cd etc/nginx/nginx.conf
 ```
 ## copiamos todo lo de default en una nueva carpeta nginx y un archivo nginx.conf y pegamos todo lo que esta entre llaves de server
-## copio la siguiente linea de comando en location debajo del index.htm
+
+## copio la siguiente linea de comando en location debajo del index.htm del archivo creado nginx.conf
 ```
 try_files $uri $uri/ /index.html;
 ```
