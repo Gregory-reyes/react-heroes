@@ -19,9 +19,9 @@ docker run --name nombre -d -p 8080:80 nginx:1.23.3
 ```
 docker exec -it 0fa bash
 ```
-## ingresamos a la parte interactiva en la ruta descrita en la imagen nginx y copiamos el archivo default.conf con un cat
+## ingresamos a la ruta descrita copiamos el archivo default.conf con un cat lo copiamos para pegarlo en nuestro nuevo archivo nginx.conf
 ```
-cd etc/nginx/nginx.conf
+cd etc/nginx/conf.d
 ```
 ## copiamos todo lo de default en una nueva carpeta nginx y un archivo nginx.conf y pegamos todo lo que esta entre llaves de server
 
